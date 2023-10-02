@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo-Integrador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/CSS/index.css">
+</head>
+<body>
+  <main>
+    <!--  NAVBAR  -->
+    <div class="row">
+      <nav class="navbar bg-body-tertiary navbar-expand-lg px-5" data-bs-theme="dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="./assets/imagenes/codoacodo.png" height="70vh">
+              Config Bs As
+            </a>
+            <!--<a class="nav-link text-light " href="#">Config Bs As</a>-->
+
+            <button class="navbar-toggler" type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" 
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class="bi bi-list"></i>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                  <!--
+                  <li class="nav-item ">
+                      <a class="nav-link" href="#">Config Bs As</a>
+                  </li>
+                  -->
+                  <li class="nav-item">
+                      <a class="nav-link text-light" href="#">La conferencia</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Los oradores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">El lugar y la fecha</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Convi&eacute;rtete en orador</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-success" href="#">Comprar tickets</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+    </div>
+    
+    <!--  CARRUSEL   -->
+    <div class="row">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+              <img src="./assets/imagenes/ba1.jpg" class="d-block w-100 imagenCarrusel" alt="..." >
+          </div>
+          <div class="carousel-item">
+              <img src="./assets/imagenes/ba2.jpg" class="d-block w-100 imagenCarrusel" alt="...">
+          </div>
+          <div class="carousel-item">
+              <img src="./assets/imagenes/ba3.jpg" class="d-block w-100 imagenCarrusel" alt="...">
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+          <div class="carousel-caption text-end mb-5">
+            <h2>Config Bs As</h2>
+            <p class="texto-carrusel">
+              Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que est&aacute;n creando el futuro de Internet. Ven a conocer a miembros del evento, a todos los estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!
+            </p>
+            <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
+            <button type="button" class="btn btn-success">Comprar tickets</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--  CARDS  -->
+    <div class="row justify-content-center">
+      <span class="text-center">CONOCE A LOS</span>
+      <h3 class="text-center">ORADORES</h3>
+
+      <div class="card border-0" style="width: 18rem;">
+        <img src="./assets/imagenes/steve.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <span class="bg-warning rounded-1 px-2"><b>JavaScript</b></span>
+          <span class="bg-info rounded-1 px-2 text-white"><b>React</b></span>
+          <h5 class="card-title">Steve Jobs</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! 
+            Facilis explicabo repellat ut similique incidunt? Ullam nobis beatae, corporis facilis veniam magni ratione!
+          </p>
+        </div>
+      </div>
+      
+      <div class="card border-0" style="width: 18rem;">
+        <img src="./assets/imagenes/bill.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <span class="bg-warning rounded-1 px-2"><b>JavaScript</b></span>
+          <span class="bg-info rounded-1 px-2 text-white"><b>React</b></span>
+          <h5 class="card-title">Bill Gates</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          
+        </div>
+      </div>
+      <div class="card border-0" style="width: 18rem;">
+        <img src="./assets/imagenes/ada.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <span class="bg-secondary rounded-1 px-2 text-white"><b>Negocios</b></span>
+          <span class="bg-danger rounded-1 px-2 text-white"><b>Startups</b></span>
+          <h5 class="card-title">Ada Lovelace</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  
+        </div>
+      </div>
+    </div>
+
+    
+    <!--  DOS SECCIONES -->
+    <div class="row mt-3">
+        <div class="col-md-6 imagenColumna">
+          <img src="./assets/imagenes/honolulu.jpg" class="w-100" alt="...">
+        </div>
+        <div class="col bg-dark textoColumna px-3">
+            <h4 class="text-white mt-3">Bs As - Octubre</h4>
+            <p class="text text-white">Buenos Aires es la provincia y localidad m&aacute;s grande del estado de Argentina, en los Estados Unidos. Honolulu es la
+              m&aacute;s sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al &aacute;rea
+              urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado
+              consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).
+            </p>
+            <button type="button" class="btn btn-outline-light">
+              Conoce m&aacute;s
+            </button>
+        </div>
+    </div>
+    
+
+  <!--  FORMULARIO  -->
+  <div class="row mt-4">
+    <div class="col-md-6 offset-md-3">
+      <form action="">
+
+        <div class="row">
+          <span class="text-center">CONVI&Eacute;RTETE EN UN</span>
+          <h3 class="text-center">ORADOR</h3>
+          <p class="text-center">
+            Anótate como orador para dar una <abbr title="attribute">charla ignite</abbr>. Cuéntanos de qué quieres hablar!
+          </p>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+            </div>
+          </div>
+    
+    
+          <div class="row mb-3 mt-3">
+            <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" placeholder="Sobre qu&eacute; quieres hablar?" rows="3"></textarea>
+            <span class="text-secondary">
+              Recuerda incluir un título para tu charla.
+            </span>
+          </div>
+        </div>
+        <div class="d-grid gap-2">
+          <button 
+          class="btn botonFormulario text-white" 
+          onmouseover="this.style.background='#A1C82E'" 
+          onmouseout="this.style.backgroundColor ='#A1C82E'" 
+          type="submit">
+
+            Enviar
+
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+ 
+  <!--  PIE DE PAGINA   -->
+  <footer class="footerFondo mt-3 px-3">
+
+    <div class="row justify-content-center py-3 mx-3">
+      
+        <div class="col-md-1 col-2 mx-3 my-auto px-md-0 px-3 text-center">
+          <a class="linkFooter text-light " href="">Preguntas frecuentes</a>
+        </div>
+        <div class="col-md-1 col-2 mx-3 my-auto px-md-0 px-3 text-center">
+          <a class="linkFooter text-light " href="">Contáctanos</a>
+        </div>
+        <div class="col-md-1 col-2 mx-3 my-auto px-md-0 px-3 text-center">
+          <a class="linkFooter text-light" href="">Prensa</a>
+        </div>
+        <div class="col-md-1 col-2 mx-3 my-auto px-md-0 px-3 text-center">
+          <a class="linkFooter text-light" href="">Conferencias</a>
+        </div>
+        <div class="col-md-1 col-2 mx-3 my-auto px-md-0 px-3 text-center">
+          <a class="linkFooter text-light text-center" href="">Términos y condiciones</a>
+        </div>
+        <div class="col-md-1 col-2 mx-3 my-auto px-md-0 px-3 text-center">
+          <a class="linkFooter text-light" href="">Privacidad</a>
+        </div>
+        <div class="col-md-1 col-2 mx-3 my-auto px-md-0 px-3 text-center">
+          <a class="linkFooter text-light" href="">Estudiantes</a>
+        </div>
+
+    </div>
+
+  </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+  </main>
+</body>
+</html>
