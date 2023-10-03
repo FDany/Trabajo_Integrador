@@ -35,6 +35,15 @@
     .linkFooter{
         margin-block: 30%;
     }
+    /*
+    .columnaFooter{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+    */
 }
 @media screen and (min-width: 768px){
     .carousel-caption{
