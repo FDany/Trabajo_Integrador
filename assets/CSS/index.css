@@ -6,13 +6,7 @@
 .carousel-inner img{
     height: 90vh;
 }
-/*
-.textoCarrusel{
-    margin-top: 0;
-    padding-bottom: 30vh;
-    padding-right: 11vw;
-}
-*/
+
 .imagenColumna{
     padding-right: 1px;
 }
@@ -35,15 +29,6 @@
     .linkFooter{
         margin-block: 30%;
     }
-    /*
-    .columnaFooter{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: 0;
-        padding: 0;
-    }
-    */
 }
 @media screen and (min-width: 768px){
     .carousel-caption{
