@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trabajo-Integrador-JavaScript</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="../CSS/integradorJs.css">
+    </head>
+    <body>
+        <header>
+            <!--  NAVBAR  -->
+            <nav class="navbar bg-body-tertiary navbar-expand-lg px-1 px-sm-5" data-bs-theme="dark">
+                <div class="container-fluid">
+                  
+                  <a class="navbar-brand" href="#">
+                    Config Bs As
+                  </a>
+        
+                  <button class="navbar-toggler" type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+        
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+        
+                  </button>
+        
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">La conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Convi&eacute;rtete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-success" href="#">Comprar tickets</a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+        
+            <!--  CUADROS  -->
+            <section class="row mt-5 mx-3">
+                <div class="d-flex flex-wrap py-3 justify-content-center flex-sm-row">
+
+                    <div class="card cardEstudiante border-primary mx-auto mx-sm-1 rounded-0 my-1 my-lg-0" style="width: 18rem;" id="cardEstudiante">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Estudiante</h5>
+                            <p>Tienen un descuento</p>
+                            <h6 class="card-subtitle mb-2">80%</h6>
+                            <p class="card-text text-secondary">* presentar documentacion.</p>
+                        </div>
+                    </div>
+
+                    <div class="card cardTrainee border-info mx-auto mx-sm-1 rounded-0 my-1 my-lg-0" style="width: 18rem;" id="cardTrainee">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Traniee</h5>
+                            <p>Tienen un descuento</p>
+                            <h6 class="card-subtitle mb-2">50%</h6>
+                            <p class="card-text text-secondary">* presentar documentacion.</p>
+                        </div>
+                    </div>
+                    <div class="card cardJunior border-warning mx-auto mx-sm-1 rounded-0 my-1 my-lg-0" style="width: 18rem;" id="cardJunior">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Junior</h5>
+                            <p>Tienen un descuento</p>
+                            <h6 class="card-subtitle mb-2">15%</h6>
+                            <p class="card-text text-secondary">* presentar documentacion.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            
+        
+            <!--  FORMULARIO  -->
+            <section class="row mt-4 px-2 px-sm-0">
+                <form action="" class="col-md-8 offset-md-2">
+                    
+                    <h6 class="text-center fw-normal">VENTA</h6>
+                    <h3 class="text-center">VALOR DE TICKET $200</h3>
+
+                    <div class="d-flex flex-row mb-3">
+                        <!--    NOMBRE  -->
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" id="nombre">
+                        <!--    APELLIDO    -->
+                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" id="apellido">
+                    </div>
+
+                    <div class="d-flex flex-row mb-3">
+                        <!--    CORREO  -->
+                        <input type="email" class="form-control" placeholder="Correo" aria-describedby="emailHelp" id="correo">
+                    </div>
+            
+                    <div class="row d-flex flex-row">
+                        <!--    CANTIDAD    -->
+                        <div class="col mx-1">
+                            <p>Cantidad</p>
+                            <input type="number" class="form-control" placeholder="Cantidad" aria-label="Amount" id="cantidad">
+                        </div>
+                        <!--    CATEGORIAS  -->
+                        <div class="col mx-1">
+                            <p class="">Categoria</p>
+                            <select class="form-select" aria-label="Default select example" id="categoria">
+                                <option value="1">Estudiante</option>
+                                <option value="2">Trainee</option>
+                                <option value="3">Junior</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    
+                    <div class="row mx-1 my-5 alert alert-primary" role="alert" id="total">
+                        Total a pagar: $
+                    </div>
+
+                    <div class="row">
+
+                        <button 
+                        class="btn botonFormulario text-white col me-1 ms-3" 
+                        onmouseover="this.style.background='#A1C82E'" 
+                        onmouseout="this.style.backgroundColor ='#A1C82E'"
+                        type="button"
+                        id="borrar">
+                            Borrar
+                        </button>
+
+                        <button 
+                        class="btn botonFormulario text-white col ms-1 me-3" 
+                        onmouseover="this.style.background='#A1C82E'" 
+                        onmouseout="this.style.backgroundColor ='#A1C82E'"
+                        type="button"
+                        id="resumen">
+                            Resumen
+                        </button>
+
+                    </div>
+
+                </form>
+            </section>
+            
+        </main>
+        
+        <!--  PIE DE PAGINA   -->
+        <footer class="footerFondo mt-3">
+            <div class="container-fluid">
+        
+              <div class="d-flex flex-wrap py-3 justify-content-center flex-column flex-sm-row">
+                  <div class="m-3 py-md-3 text-center">
+                    <a class="linkFooter text-light " href="">Preguntas frecuentes</a>
+                  </div>
+                  <div class="m-3 py-md-3 text-center">
+                    <a class="linkFooter text-light " href="">Contáctanos</a>
+                  </div>
+                  <div class="m-3 py-md-3 text-center">
+                    <a class="linkFooter text-light" href="">Prensa</a>
+                  </div>
+                  <div class="m-3 py-md-3 text-center">
+                    <a class="linkFooter text-light" href="">Conferencias</a>
+                  </div>
+                  <div class="m-3 py-md-3 text-center">
+                    <a class="linkFooter text-light" href="">Términos y condiciones</a>
+                  </div>
+                  <div class="m-3 py-md-3 text-center">
+                    <a class="linkFooter text-light" href="">Privacidad</a>
+                  </div>
+                  <div class="m-3 py-md-3 text-center">
+                    <a class="linkFooter text-light" href="">Estudiantes</a>
+                  </div>
+              </div>
+            </div>
+        </footer>
+
+
+        <script src="../JavaScript/CompraTickets.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+    
+</html>
