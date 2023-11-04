@@ -54,8 +54,45 @@ function cardOpciones(valor){
             break;
     }
 }
+/*
+
+function categoriaEstudiante(){
+    updateValueById('categoria','1');
+}
+function categoriaTraninee(){
+    updateValueById('categoria','1');
+}
+function categoriaJunior(){
+    updateValueById('categoria','1');
+}
 
 
+document.getElementById('cardEstudiante').addEventListener('click',categoriaEstudiante);
+document.getElementById('cardTrainee').addEventListener('click',categoriaTrainee);
+document.getElementById('cardJunior').addEventListener('click',categoriaJunior);
+
+
+*/
+
+
+
+
+
+
+
+/*
+
+const cardOpciones = (e) => {
+	const id = doc.get...('id').value;
+}
+
+document.getElementById('cardJunior').addEventListener('click',cardOpciones);
+
+<div value="1" id="cardJunior">
+  
+</div>
+
+*/
 
 
 document.getElementById('borrar').addEventListener('click',borrar);
