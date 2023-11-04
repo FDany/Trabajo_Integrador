@@ -59,12 +59,15 @@ function cardOpciones(valor){
 function categoriaEstudiante(){
     updateValueById('categoria','1');
 }
+
 function categoriaTraninee(){
     updateValueById('categoria','2');
 }
+
 function categoriaJunior(){
     updateValueById('categoria','3');
 }
+
 
 
 document.getElementById('borrar').addEventListener('click',borrar);
