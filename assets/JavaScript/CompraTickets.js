@@ -60,13 +60,14 @@ function categoriaEstudiante(){
     updateValueById('categoria','1');
 }
 
-function categoriaTraninee(){
+function categoriaTrainee(){
     updateValueById('categoria','2');
 }
 
 function categoriaJunior(){
     updateValueById('categoria','3');
 }
+
 
 
 
