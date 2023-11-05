@@ -40,7 +40,7 @@ function borrar(){
 }
 
 
-
+/*
 function cardOpciones(valor){
     switch (valor){
         case 1:
@@ -54,7 +54,7 @@ function cardOpciones(valor){
             break;
     }
 }
-
+*/
 
 function categoriaEstudiante(){
     updateValueById('categoria','1');
