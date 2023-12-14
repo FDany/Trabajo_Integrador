@@ -1,0 +1,27 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.linkFooter{
+    text-decoration: none;
+}
+.footerFondo{
+    /* background-color: #1e5170; */
+    background: linear-gradient(to right, rgba(28,34,67,255), rgba(31,82,113,255));
+    
+    /*
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    position:fixed;
+    */
+    margin-top: auto;
+}
+
+@media screen and (max-width: 768px){
+    .linkFooter{
+        margin-block: 30%;
+    }
+}
