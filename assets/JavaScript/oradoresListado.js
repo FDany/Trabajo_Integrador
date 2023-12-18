@@ -61,11 +61,6 @@ document.getElementById('btnGetUsers').addEventListener('click',listarOradores);
 /* -------------------------- ELIMINACION ------------------------- */
 
 eliminarOrador = (id) => {
-    /*
-    if(!confirm('SEGURO?')) {
-        return;
-    }
-    */
     Swal.fire({
         title: "Estas seguro?",
         text: "No lo podras revertir!",
@@ -85,18 +80,9 @@ eliminarOrador = (id) => {
             })
             .then(response => response)
             .then(json => {
-                //alert(`se ha eliminado el orador id: ${id}`);
-                /*
-                Swal.fire({
-                    title: `El id: ${id}, se ha eliminado con exito.`,
-                    icon: "success"
-                    
-                });
-                */
 
                 Swal.fire({
                     title: "Eliminado!",
-                    //text: "Your file has been deleted.",
                     text: `Se ha eliminado a ${oradorEliminado.nombre} ${oradorEliminado.apellido}`,
                     icon: "success"
                 });
@@ -108,26 +94,6 @@ eliminarOrador = (id) => {
 
         }
     });
-
-    /*
-
-    fetch(`http://localhost:8080/web-app-23544/api/orador?id=${id}`, {
-        method: "DELETE",
-    })
-    .then(response => response)
-    .then(json => {
-        //alert(`se ha eliminado el orador id: ${id}`);
-
-        Swal.fire({
-            title: `El id: ${id}, se ha eliminado con exito.`,
-            icon: "success"
-            
-        });
-
-        listarOradores();
-    })
-    .catch(err => console.log(err));
-    */
 }
 
 /* ---------------------------------------------------------------- */
@@ -194,7 +160,6 @@ const actualizarOrador = () => {
     })
     .then(response => response)  // devolvere un: status code 200
     .then(json => {
-        //alert(`Se ha modificado el orador id:${oradorSeleccionado.id}`)
         // cargo de nuevo de la lista
         listarOradores();
         //limpio el oradorBuscado del localStorage
